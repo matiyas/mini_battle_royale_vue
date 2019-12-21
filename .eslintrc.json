@@ -7,7 +7,6 @@
     "eslint:recommended",
     "plugin:vue/essential",
     "@vue/prettier",
-    "eslint-config-airbnb-base",
     "prettier"
   ],
   "globals": {

@@ -1,0 +1,51 @@
+@import './variables.scss';
+
+@font-face {
+  font-family: Teko;
+  src: url('../fonts/teko/Teko-Light.ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Teko;
+  src: url('../fonts/teko/Teko-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Teko;
+  src: url('../fonts/teko/Teko-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Teko;
+  src: url('../fonts/teko/Teko-SemiBold.ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Teko;
+  src: url('../fonts/teko/Teko-Bold.ttf');
+  font-weight: 700;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Teko, Arial, Helvetica, sans-serif;
+  font-size: $font-size-md;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mbr-container {
+  max-width: $container-max-width;
+  margin: 0 auto;
+}
