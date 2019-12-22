@@ -2,7 +2,9 @@
   <div id="app">
     <mbr-navigation-menu />
     <div class="mbr-container container">
-      <router-view />
+      <transition name="fade" mode="out-in">
+        <router-view />
+      </transition>
     </div>
   </div>
 </template>
