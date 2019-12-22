@@ -1,6 +1,9 @@
 export default {
   mbrFacebookButton: {
-    text: 'Log in with Facebook'
+    text: 'Sign in with Facebook'
+  },
+  mbrGoogleButton: {
+    text: 'Sign in with Google'
   },
   mbrNavigationMenu: {
     links: {

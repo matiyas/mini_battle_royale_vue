@@ -36,5 +36,11 @@ export default {
 }
 .auth-box__sign-in-button {
   margin-top: $m-md;
+  width: 100%;
+}
+@media (min-width: $screen-sm-min) {
+  .auth-box__sign-in-button {
+    max-width: 200px;
+  }
 }
 </style>

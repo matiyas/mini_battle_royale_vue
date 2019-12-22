@@ -1,17 +1,17 @@
 <template>
-  <button class="mbr-button facebook-button" @click="$emit('click')">
-    <font-awesome-icon
-      :icon="['fab', 'facebook-square']"
-      size="lg"
-      class="facebook-button__icon"
-    />
-    {{ $t('components.mbrFacebookButton.text') }}
-  </button>
+  <mbr-oauth-button
+    class="facebook-button"
+    :icon="['fab', 'facebook-square']"
+    >{{ $t('components.mbrFacebookButton.text') }}</mbr-oauth-button
+  >
 </template>
 
 <script>
+import MbrOauthButton from '@/components/MbrOauthButton'
+
 export default {
-  name: 'MbrFacebookButton'
+  name: 'MbrFacebookButton',
+  components: { MbrOauthButton }
 }
 </script>
 
@@ -19,8 +19,5 @@ export default {
 .facebook-button {
   color: $text-secondary-color;
   background-color: $facebook-color;
-}
-.facebook-button__icon {
-  margin-right: $m-sm;
 }
 </style>
