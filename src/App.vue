@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <mbr-navigation-menu />
-    <router-view />
+    <div class="mbr-container container">
+      <router-view />
+    </div>
   </div>
 </template>
 
@@ -12,3 +14,9 @@ export default {
   components: { MbrNavigationMenu }
 }
 </script>
+
+<style scoped lang="scss">
+.container {
+  margin-top: 120px;
+}
+</style>

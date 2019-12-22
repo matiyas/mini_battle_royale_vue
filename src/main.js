@@ -5,6 +5,13 @@ import store from './store'
 import VueI18n from 'vue-i18n'
 import messages from './locales/index'
 import './assets/styles/main.scss'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faBars)
+
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.use(VueI18n)
 

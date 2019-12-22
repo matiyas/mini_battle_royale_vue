@@ -15,7 +15,22 @@ $container-max-width: 1300px;
 
 // Colors
 $bg-primary-color: #202226;
-$bg-secondary-color: #363940;
+$bg-primary-dark-color: #1b1c1f;
+$bg-secondary-color: #303238;
 $primary-color: #189456;
 $text-primary-color: #b4bbc3;
 $text-secondary-color: #fff;
+$accent-color: #ba0b0b;
+
+// Screen breakpoints
+$screen-xs-max: 575px;
+$screen-sm-min: $screen-xs-max + 1;
+$screen-sm-max: 767px;
+$screen-md-min: $screen-sm-max + 1;
+$screen-md-max: 991px;
+$screen-lg-min: $screen-md-max + 1;
+$screen-lg-max: 1199px;
+$screen-xl-min: $screen-lg-max + 1;
+
+// Other
+$box-shadow: 0px 0px 17px 8px #00000030;
