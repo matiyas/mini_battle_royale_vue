@@ -6,15 +6,21 @@
     <div class="box__form">
       <slot />
     </div>
+    <div>
+      <div>or</div>
+      <mbr-facebook-button />
+    </div>
   </div>
 </template>
 
 <script>
+import MbrFacebookButton from '@/components/MbrFacebookButton'
 export default {
   name: 'MbrAuthBox',
   props: {
     title: String
-  }
+  },
+  components: { MbrFacebookButton }
 }
 </script>
 

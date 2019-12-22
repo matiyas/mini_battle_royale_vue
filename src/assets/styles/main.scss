@@ -50,3 +50,18 @@ a {
   max-width: $container-max-width;
   margin: 0 auto;
 }
+
+.mbr-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: $font-size-md;
+  font-weight: bold;
+  padding: $m-sm $m-lg;
+  box-shadow: $box-shadow;
+}
+@media (min-width: $screen-sm-min) {
+  .mbr-button {
+    font-size: $font-size-lg;
+  }
+}

@@ -4,6 +4,7 @@
       <input
         :class="['input', { 'input--error': isInvalidInput }]"
         :placeholder="placeholder + (required ? '*' : '')"
+        :type="type"
         :value="value"
         @input="$emit('input', $event.target.value)"
       />
@@ -27,7 +28,8 @@ export default {
     },
     errorText: String,
     placeholder: String,
-    required: Boolean
+    required: Boolean,
+    type: String
   },
   computed: {
     isInvalidInput() {
