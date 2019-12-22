@@ -4,7 +4,7 @@
       <span>{{ title }}</span>
     </div>
     <div class="box__form">
-      <input class="box__input" />
+      <slot />
     </div>
   </div>
 </template>
@@ -20,24 +20,26 @@ export default {
 
 <style scoped lang="scss">
 .box {
-  width: 70%;
-  height: 50vw;
+  width: 100%;
+  max-width: 800px;
   background-color: $bg-primary-color;
   box-shadow: $box-shadow;
 }
 .box__header {
   background-color: $bg-primary-dark-color;
-  color: rgb(180, 187, 195);
-  padding: 15px 0 15px 40px;
-  font-size: 40px;
+  color: $text-primary-color;
+  padding: $m-sm 0 $m-sm $m-xl;
+  font-size: $font-size-lg;
   font-weight: 500;
 }
 .box__form {
+  box-sizing: border-box;
   text-align: center;
-  padding: $m-xxl;
+  padding: $m-lg $m-xl;
 }
-.box__input {
-  width: 100%;
-  height: 4em;
+@media (min-width: $screen-sm-min) {
+  .box__form {
+    padding: $m-xl $m-xxl;
+  }
 }
 </style>

@@ -17,6 +17,12 @@ export default {
 
 <style scoped lang="scss">
 .container {
-  margin-top: 120px;
+  margin-top: 75px;
+  padding: $m-md;
+}
+@media (min-width: $screen-md-min) {
+  .container {
+    margin-top: 120px;
+  }
 }
 </style>

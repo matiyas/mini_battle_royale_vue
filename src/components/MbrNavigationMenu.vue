@@ -69,6 +69,7 @@ $navbar-shadow: 0 15px 10px -10px #00000040;
   width: 100%;
   background-color: $bg-primary-color;
   box-shadow: $navbar-shadow;
+  z-index: 20;
   &:after {
     content: '';
     display: block;
@@ -117,7 +118,6 @@ $navbar-shadow: 0 15px 10px -10px #00000040;
   align-items: center;
   font-size: $font-size-lg;
   color: $text-secondary-color;
-  padding: $m-md;
   &,
   &:hover {
     background-color: $bg-secondary-color;
