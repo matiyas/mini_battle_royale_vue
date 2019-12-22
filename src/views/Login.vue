@@ -1,13 +1,19 @@
 <template>
-  <mbr-auth-box class="auth-box" title="Sign in">
-    <mbr-input placeholder="Login" v-model="user.login" required />
+  <mbr-auth-box class="auth-box" :title="$t('general.signIn')">
     <mbr-input
-      placeholder="Password"
+      :placeholder="$t('general.username')"
+      v-model="user.username"
+      required
+    />
+    <mbr-input
+      :placeholder="$t('general.password')"
       v-model="user.password"
       type="password"
       required
     />
-    <mbr-button class="auth-box__sign-in-button">Sign in</mbr-button>
+    <mbr-button class="auth-box__sign-in-button">{{
+      $t('general.signIn')
+    }}</mbr-button>
   </mbr-auth-box>
 </template>
 
@@ -22,7 +28,7 @@ export default {
   data() {
     return {
       user: {
-        login: null,
+        username: null,
         password: null
       }
     }
