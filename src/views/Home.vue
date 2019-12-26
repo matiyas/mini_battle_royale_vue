@@ -1,9 +1,11 @@
 <template>
-  <span>home</span>
+  <MbrLogo class="logo" viewBox="-100 60 700 700" />
 </template>
 
 <script>
+import MbrLogo from '@/assets/images/mbr-logo.svg'
 export default {
-  name: 'home'
+  name: 'home',
+  components: { MbrLogo }
 }
 </script>
