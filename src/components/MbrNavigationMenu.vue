@@ -2,7 +2,7 @@
   <nav class="navbar">
     <div class="mbr-container navbar__container">
       <router-link
-        :to="{ name: 'root_path' }"
+        :to="{ name: 'home_path' }"
         class="navbar__logo navbar__link"
         >{{ $root.appName }}</router-link
       >
@@ -14,9 +14,9 @@
             class="navbar__item"
             @click="toggleMenu"
           >
-            <router-link :to="link.to" class="navbar__link">
-              {{ link.text }}
-            </router-link>
+            <router-link :to="link.to" class="navbar__link">{{
+              link.text
+            }}</router-link>
           </li>
         </ul>
         <button class="navbar__toggle" @click="toggleMenu">
@@ -36,7 +36,7 @@ export default {
       links: [
         {
           text: this.$t('components.mbrNavigationMenu.links.mainPage'),
-          to: { name: 'root_path' }
+          to: { name: 'home_path' }
         },
         {
           text: this.$t('components.mbrNavigationMenu.links.signIn'),

@@ -3,13 +3,14 @@ import VueRouter from 'vue-router'
 import Home from '@/views/Home.vue'
 import Login from '@/views/Login'
 import Registration from '@/views/Registration'
+import Game from '@/views/Game'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: 'home_path',
     component: Home
   },
   {
@@ -21,6 +22,11 @@ const routes = [
     path: '/sign_up',
     name: 'registration_path',
     component: Registration
+  },
+  {
+    path: '/game',
+    name: 'game_path',
+    component: Game
   }
 ]
 
